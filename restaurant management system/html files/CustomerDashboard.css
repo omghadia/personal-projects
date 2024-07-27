@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@600&display=swap");
+
+:root {
+  --light-yellow: #e4c590;
+  --grey: #848e91;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-yellow);
+}
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  max-width: 300px !important;
+  height: 100vh;
+  padding: 1em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+}
+
+.hambtn {
+  position: absolute;
+  top: 5px;
+  left: 250px;
+  visibility: hidden;
+}
+
+.text {
+  width: 140px;
+  color: var(--light-yellow);
+  font-size: 1.2em;
+}
+
+.sidebar.close .hambtn {
+  left: 80px;
+}
+
+.sidebar.close {
+  align-items: center;
+  width: 80px;
+}
+
+.sidebar.close .text {
+  display: none;
+}
+
+.sidebar div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  gap: 0.75em;
+}
+
+.sidebar div:not(:nth-child(2)) {
+  color: var(--grey);
+  font-size: 1.35em;
+}
+
+.sidebar div:not(:nth-child(2)) span:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  padding: 10px 0px;
+}
+
+.sidebar.close div:not(:nth-child(2)) span:nth-child(1) {
+  width: 50px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo span {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.main {
+  height: 100vh;
+  background-color: #fafafa;
+  max-width: calc(100vw - 80px);
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.5em 1em 0em 0.25em;
+  color: var(--grey);
+  font-size: 1.5em;
+}
+
+.header span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: wrap;
+  width: 81vw;
+}
+
+.content h1,
+h2 {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.orderlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.orderid {
+  /* border: 1px solid red; */
+  border-bottom: 2px solid black;
+}
+
+.orderitem {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+  font-size: 1.5em;
+}
+.oid {
+  width: 50px;
+}
+.oimg {
+  width: 125px;
+}
+.oimg img {
+  width: 100px;
+  border-radius: 5px;
+}
+.ofood {
+  width: 200px;
+}
+.oqty {
+  width: 75px;
+}
+.oprice {
+  width: 75px;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    height: 100vh;
+    width: 100%;
+    background-color: #fafafa;
+    position: absolute;
+    left: 80px;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    visibility: hidden;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--light-yellow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-yellow);
+}
