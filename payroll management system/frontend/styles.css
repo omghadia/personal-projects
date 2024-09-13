@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+    width: 510px;
+    margin: 50px auto;
+    background-color:white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('home.jpg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ 
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:black;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+    
+}
+  
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+  
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 18px;
+    color: #555;
+    transition: border-bottom-color 0.3s;
+}
+  
+input[type="text"]:focus, input[type="password"]:focus {
+  outline: none;
+  border-bottom-color: navy;
+}
+  
+button[type="submit"] {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color:navy;
+    border-color: black;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    left: 50%;
+    transition: background-color 0.3s;
+    
+}
+  
+button[type="submit"]:hover {
+    background-color:gray;
+    color: black;
+}
+
+
+  

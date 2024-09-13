@@ -1,0 +1,150 @@
+h1 {
+  color:rgb(239, 23, 23);
+  background-color:gold;
+  padding: 20px;
+  font-size: 3em;
+  font-family: "Times New Roman";
+  font-style: italic;
+  text-align:center;
+}
+
+h2 {
+  color:rgb(15, 245, 199);
+  font-size: 2em;
+  font-weight: 800;
+  font-family: "Times New Roman";
+  text-align:center
+}
+
+p {
+  color:blanchedalmond;
+  font-size: 1.2em;
+}
+
+.navbar{
+  font-size: 1.2em;
+  width:100%;
+  display:inline-table;
+  padding: 10px;
+  background-color: #33f89c;
+  float:left;
+}
+
+form{
+  text-align:center;
+}
+
+.item {
+  position: relative;
+  margin: 10px 0;
+  }
+
+label {
+  width:300px;
+  border: none;
+  color: rgb(188, 238, 9);
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration:solid;
+  cursor: pointer;
+  text-align: right;
+  clear: both;
+  display: inline-block;
+  margin-right:10px;
+}
+
+input[type=text], input[type=password], input[type=date] {
+  background-color: white;
+  border:black;
+  color:black;
+  font-size: 1.5em;
+  font-weight: 600;
+  box-sizing: border-box;
+  text-align: left;
+  width:300px;
+}
+
+input[type=submit] {
+  background-color: #0f04aa;
+  border:black;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+  padding: 10px 16px;
+  text-decoration:solid;
+}
+
+body {
+  background-color:rgb(211, 22, 244)
+}
+
+.container {
+  text-align:center;
+  line-height:2;
+  margin:auto;
+  background-color: #801b76;
+  padding: 20px;
+  width:700px;
+  height:950px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  left: -35px;
+  content: "✔ ";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  left: -35px;
+  content: "✖ ";
+}
+
+.readagree{
+  margin:auto;
+  text-align: center;
+  color:rgb(188, 238, 9);
+  size:100px;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 20px 16px;
+  text-decoration:solid;
+  display:block;
+  clear:both;
+
+}
+
+.checkbox{
+  width:25px;
+  height:25px;
+  margin-right:8px;
+}
+
+.form-elements {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  float:none;
+}
+
+#message {
+  display:none;
+  background: #69b4ff;
+  color:rgb(9, 29, 178);
+  padding: 5px;
+  text-align: center;
+  font-size:1em;
+  line-height: 1;
+  font-weight: 600;
+  text-decoration:solid;
+  width:50%;
+  margin: 1em auto;
+}
